@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // class Catigories extends React.Component {
 //   state = {
@@ -30,7 +30,7 @@ import React from 'react';
 // }
 
 function Catigories({ items }) {
-  const [activeItem, setActiveItem] = React.useState(null);
+  const [activeItem, setActiveItem] = useState(null);
 
   const onSelectItem = (index) => {
     setActiveItem(index);
